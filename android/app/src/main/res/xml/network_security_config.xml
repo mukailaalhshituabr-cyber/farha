@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext HTTP to the school API server -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">169.239.251.102</domain>
+    </domain-config>
+    <!-- Block cleartext for everything else (secure by default) -->
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
